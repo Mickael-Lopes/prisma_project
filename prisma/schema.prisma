@@ -1,4 +1,4 @@
-/*generator client {
+generator client {
   provider = "prisma-client"
   output = "../src/generated/prisma"
   moduleFormat = "cjs"
@@ -25,9 +25,9 @@ enum Profile {
   ADMIN
   USER
 
-}*/
+}
 
-// datasource e generator padrão do Prisma
+/*datasource e generator padrão do Prisma
 generator client {
   provider = "prisma-client-js"
 }
@@ -244,5 +244,5 @@ model Pagamento {
   assinatura Assinatura @relation(fields: [idAssinatura], references: [id])
 
   @@map("Pagamentos")
-}
+}*/
 
